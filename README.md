@@ -11,10 +11,13 @@ Intel Core i7-6820HQ CPU 2.70GHz (Skylake), 1 CPU, 8 logical and 4 physical core
   Core   : .NET Core 2.2.0 (CoreCLR 4.6.27110.04, CoreFX 4.6.27110.04), 64bit RyuJIT
 
 
-    Method |  Job | Runtime |     Mean |     Error |    StdDev |
----------- |----- |-------- |---------:|----------:|----------:|
-  Delegate |  Clr |     Clr | 3.676 ns | 0.0892 ns | 0.0745 ns |
- Interface |  Clr |     Clr | 4.847 ns | 0.1813 ns | 0.1607 ns |
-  Delegate | Core |    Core | 3.893 ns | 0.1202 ns | 0.1125 ns |
- Interface | Core |    Core | 4.556 ns | 0.1877 ns | 0.2161 ns |
+    Method |  Job | Runtime |     Mean |     Error |    StdDev |   Median | Ratio | RatioSD |
+---------- |----- |-------- |---------:|----------:|----------:|---------:|------:|--------:|
+    Direct |  Clr |     Clr | 4.727 ns | 0.1549 ns | 0.1293 ns | 4.722 ns |  1.00 |    0.00 |
+  Delegate |  Clr |     Clr | 5.619 ns | 0.4763 ns | 1.3667 ns | 5.059 ns |  1.42 |    0.24 |
+ Interface |  Clr |     Clr | 4.509 ns | 0.1426 ns | 0.1264 ns | 4.467 ns |  0.95 |    0.04 |
+           |      |         |          |           |           |          |       |         |
+    Direct | Core |    Core | 4.298 ns | 0.1703 ns | 0.2091 ns | 4.278 ns |  1.00 |    0.00 |
+  Delegate | Core |    Core | 4.364 ns | 0.1193 ns | 0.1116 ns | 4.368 ns |  1.00 |    0.05 |
+ Interface | Core |    Core | 4.530 ns | 0.1516 ns | 0.1418 ns | 4.499 ns |  1.03 |    0.05 |
 ```
