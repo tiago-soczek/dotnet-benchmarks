@@ -13,8 +13,8 @@ Intel Core i7-6820HQ CPU 2.70GHz (Skylake), 1 CPU, 8 logical and 4 physical core
 
     Method |  Job | Runtime |     Mean |     Error |    StdDev |
 ---------- |----- |-------- |---------:|----------:|----------:|
-  Delegate |  Clr |     Clr | 3.533 ns | 0.1081 ns | 0.1367 ns |
- Interface |  Clr |     Clr | 3.933 ns | 0.1139 ns | 0.1118 ns |
-  Delegate | Core |    Core | 3.503 ns | 0.0888 ns | 0.0831 ns |
- Interface | Core |    Core | 4.304 ns | 0.0965 ns | 0.0806 ns |
+  Delegate |  Clr |     Clr | 3.676 ns | 0.0892 ns | 0.0745 ns |
+ Interface |  Clr |     Clr | 4.847 ns | 0.1813 ns | 0.1607 ns |
+  Delegate | Core |    Core | 3.893 ns | 0.1202 ns | 0.1125 ns |
+ Interface | Core |    Core | 4.556 ns | 0.1877 ns | 0.2161 ns |
 ```

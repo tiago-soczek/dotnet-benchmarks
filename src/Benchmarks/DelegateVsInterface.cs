@@ -12,19 +12,23 @@ namespace Benchmark
         private object cmd = new object();
 
         [Benchmark]
-        public void Delegate()
+        public object Delegate()
         {
             var ctx = onBegin(cmd);
 
             onEnd(ctx);
+
+            return ctx;
         }
 
         [Benchmark]
-        public void Interface()
+        public object Interface()
         {
             var ctx = wrapper.OnBegin(cmd);
 
             wrapper.OnEnd(ctx);
+
+            return ctx;
         }
 
         private interface IWrapper
