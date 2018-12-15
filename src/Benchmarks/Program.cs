@@ -1,4 +1,5 @@
 ﻿using BenchmarkDotNet.Running;
+using Benchmarks;
 
 namespace Benchmark
 {
@@ -6,7 +7,7 @@ namespace Benchmark
     {
         public static void Main(string[] args)
         {
-            var summary = BenchmarkRunner.Run<DelegateVsInterface>();
+            var summary = BenchmarkRunner.Run<EqualsIgnoreCaseVsToUpper>();
         }
     }
 }
